@@ -1,0 +1,3 @@
+D:/MrMas/iticu-eee/first-year/BIL_131/projects/sample-post-midterm-project/GPA-calculator-for-istanbul-ticaret-university/cmake-build-debug/CMakeFiles/GPA_calculator_for_istanbul_ticaret_university.dir
+D:/MrMas/iticu-eee/first-year/BIL_131/projects/sample-post-midterm-project/GPA-calculator-for-istanbul-ticaret-university/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/MrMas/iticu-eee/first-year/BIL_131/projects/sample-post-midterm-project/GPA-calculator-for-istanbul-ticaret-university/cmake-build-debug/CMakeFiles/rebuild_cache.dir

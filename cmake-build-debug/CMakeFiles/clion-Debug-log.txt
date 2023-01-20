@@ -1,0 +1,4 @@
+"D:\CLion 2022.2.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/CLion 2022.2.2/bin/ninja/win/ninja.exe" -G Ninja -S D:\MrMas\iticu-eee\first-year\BIL_131\projects\sample-post-midterm-project\GPA-calculator-for-istanbul-ticaret-university -B D:\MrMas\iticu-eee\first-year\BIL_131\projects\sample-post-midterm-project\GPA-calculator-for-istanbul-ticaret-university\cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/MrMas/iticu-eee/first-year/BIL_131/projects/sample-post-midterm-project/GPA-calculator-for-istanbul-ticaret-university/cmake-build-debug

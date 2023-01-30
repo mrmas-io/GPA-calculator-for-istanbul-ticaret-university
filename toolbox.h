@@ -6,6 +6,7 @@
 #define GPA_CALCULATOR_FOR_ISTANBUL_TICARET_UNIVERSITY_TOOLBOX_H
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #if defined(_WIN32) || defined(_WIN64) || defined(__CYGWIN__) || defined(__MINGW32__) || defined(__MINGW64__)
 #include <windows.h>
 #else
@@ -16,8 +17,8 @@
 
 int number_of_courses, list=0;
 short X=2, Y=10;
-char course_code[minsize];
-float grade_points, course_credits, total_grade_points=0, total_credits=0, grade_point_average;
+char course_code[minsize], letter_grade[minsize];
+double grade_points, course_credits, total_grade_points=0, total_credits=0, grade_point_average, incompleted_credit = 0;
 
 extern void SetCursorPosition(short x, short y)
 {

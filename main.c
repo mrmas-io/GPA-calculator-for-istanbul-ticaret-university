@@ -25,13 +25,13 @@ void gpa()
     printf(" the table on the right side.");
 
     SetCursorPosition(2, 6);
-    printf("%c Enter your Course Code, Grade Point, and Course Credit Hours.", 0x1A);
+    printf("%c Enter your Course Code, Letter Grade, and Course Credit Hours.", 0x1A);
     SetCursorPosition(2, 7);
-    printf("%c For Example :\tMATH112   3.50   7.0", 0x1A);
+    printf("%c For Example :\tMATH112   BA   7.0", 0x1A);
 
 
     SetCursorPosition(2, 9);
-    printf("\t\tCOURSE CODE  \t  GRADE POINT  \t  CREDITS");
+    printf("\t\tCOURSE CODE  \t LETTER GRADE  \t  CREDITS");
     for (int i = 1; i <= number_of_courses; i++)
     {
         SetCursorPosition(X, Y+=2);
@@ -39,17 +39,73 @@ void gpa()
         SetCursorPosition(18, Y);
         scanf("%s", course_code);
         SetCursorPosition(36, Y);
-        scanf("%f", &grade_points);
+        scanf("%s", letter_grade);
         SetCursorPosition(53, Y);
-        scanf("%f", &course_credits);
+        scanf("%lf", &course_credits);
 
-        total_credits += course_credits;
-        total_grade_points += course_credits * grade_points;
+        if (strcmp(letter_grade, "AA") == 00)
+        {
+            grade_points = 4.00;
+            total_credits += course_credits;
+            total_grade_points += course_credits * grade_points;
+        }
+        if (strcmp(letter_grade, "BA") == 0)
+        {
+            grade_points = 3.75;
+            total_credits += course_credits;
+            total_grade_points += course_credits * grade_points;
+        }
+        if (strcmp(letter_grade, "BB") == 0)
+        {
+            grade_points = 3.50;
+            total_credits += course_credits;
+            total_grade_points += course_credits * grade_points;
+        }
+        if (strcmp(letter_grade, "CB") == 0)
+        {
+            grade_points = 3.00;
+            total_credits += course_credits;
+            total_grade_points += course_credits * grade_points;
+        }
+        if (strcmp(letter_grade, "CC") == 0)
+        {
+            grade_points = 2.50;
+            total_credits += course_credits;
+            total_grade_points += course_credits * grade_points;
+        }
+        if (strcmp(letter_grade, "CD") == 0)
+        {
+            grade_points = 2.00;
+            total_credits += course_credits;
+            total_grade_points += course_credits * grade_points;
+        }
+        if (strcmp(letter_grade, "DD") == 0)
+        {
+            grade_points = 1.50;
+            total_credits += course_credits;
+            total_grade_points += course_credits * grade_points;
+        }
+        if (strcmp(letter_grade, "DF") == 0)
+        {
+            grade_points = 1.00;
+            total_credits += course_credits;
+            total_grade_points += course_credits * grade_points;
+        }
+        if (strcmp(letter_grade, "FF") == 0 || strcmp(letter_grade, "IA") == 0 || strcmp(letter_grade, "NP") == 0)
+        {
+            grade_points = 0.00;
+            total_credits += course_credits;
+            total_grade_points += course_credits * grade_points;
+            incompleted_credit += course_credits;
+        }
     }
 
     grade_point_average = total_grade_points / total_credits;
     SetCursorPosition(X, Y+=2);
     printf("Your GPA is %.2f", grade_point_average);
+
+    SetCursorPosition(X, Y+=2);
+    printf("Attempted Credits = %.0lf   -   Completed Credits = %.0lf", total_credits, total_credits - incompleted_credit);
 
     SetCursorPosition(0, 32);
     printf("\n");
@@ -79,5 +135,5 @@ void grade_scale()
     SetCursorPosition(85, 22);
     printf("FF \t   F \t\t 0.00 \t\t   00 - 30");
     SetCursorPosition(85, 24);
-    printf("IA \t   - \t\t 0.00 \t\t   DISCONTINUED");
+    printf("IA/NP \t   - \t\t 0.00 \t\t   DISCONTINUED");
 }

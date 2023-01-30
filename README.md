@@ -5,7 +5,7 @@ This project is a GPA calculator for Istanbul Ticaret University's grading syste
 - Calculates the GPA based on Istanbul Ticaret University's grading system.
 Prints a table on the console, showing the university's grading system, compared to the ECTS and percentage system.
 
-![screenshot](.idea/screenshot.PNG)
+![screenshot](.idea/screenshot-update.PNG)
 
 ## User-friendly interface.
 - The program is implemented in C, so it's lightweight, fast, and efficient.
@@ -13,7 +13,7 @@ Prints a table on the console, showing the university's grading system, compared
 ## How to use
 - Download the source code and compile it using a C compiler.
 Run the program and enter the number of courses you have taken.
-For each course, enter the course name, credit hours, and grade received.
+For each course, enter the course name, credit hours, and letter grade received.
 The program will calculate your GPA and print the results on the console.
 
 ## Example
